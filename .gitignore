@@ -5,6 +5,8 @@
 !/src
 !.gitignore
 
+/e2e
+
 # compiled output
 /dist
 /tmp

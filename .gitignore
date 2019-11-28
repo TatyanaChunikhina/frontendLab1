@@ -1,12 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-#All
-/*.*
-!/src
-!/src/app/text-field
-!.gitignore
-
 /e2e
+*.json
+/browserslist
+/karma.conf.js
 
 # compiled output
 /dist

@@ -3,6 +3,7 @@
 #All
 /*.*
 !/src
+!/src/app/text-field
 !.gitignore
 
 /e2e

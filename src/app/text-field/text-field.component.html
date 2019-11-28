@@ -1,0 +1,3 @@
+<input type="text" #inputField value="" (input)="inputText($event.target.value)">
+<button name="button" (click)="text=inputField.value; inputField.value=''; inputText('')" [disabled]='isDisabled'>Вывести</button>
+<p [class]='myColor'>{{text}}</p>

@@ -1,0 +1,16 @@
+.buttonStart{
+	background-color:#9ACD32;
+	width: 100px ;
+	height: 75px;
+
+
+}
+.buttonStop{
+	width: 100px ;
+	height: 75px;
+	background-color: red;
+}
+.center{
+	padding: 100px;
+	align: center;
+}

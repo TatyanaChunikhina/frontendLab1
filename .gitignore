@@ -4,6 +4,8 @@
 *.json
 /browserslist
 /karma.conf.js
+/src/assets
+/src/environments
 
 # compiled output
 /dist

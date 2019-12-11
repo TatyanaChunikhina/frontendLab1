@@ -1,0 +1,39 @@
+<div class="c">
+
+
+<p class="green">Number of activations - {{counterService.enable}}</p>
+<p class="red">Number of desactivations - {{counterService.disable}}</p>
+
+<hr>
+<H1>
+  Add new User:
+</H1>
+<input type="text" #userName value="">
+
+<input type="radio" #isAcvtive id="contactChoice1" checked="true" name="contact"><label for="contactChoice1">Acvtive</label>
+<input type="radio" id="contactChoice2" name="contact"><label for="contactChoice2">Inactive</label>
+       
+<button (click)="userAdded=userService.add(userName.value,isAcvtive.checked);isAdded=true;">Add</button>
+
+
+<div *ngIf="isAdded">
+<div *ngIf="userAdded; then thenBlock else elseBlock"></div>   
+            <ng-template #thenBlock ><p class="green"> Пользователь {{userName.value}} добавлен!</p></ng-template>  
+            <ng-template #elseBlock ><p class="red">Пользователь с таким именем уже существует!</p></ng-template>    
+
+</div>
+</div>
+<hr>
+
+<div class='l'>
+  <h1>Active users</h1>
+  <app-active-users *ngFor="let active of userService.activeUsers" [user]="active"></app-active-users>
+</div>
+
+
+<div class='r'>
+  <h1>Inactive users</h1>
+  <app-inactive-users *ngFor="let inactive of userService.inactiveUsers" [user]="inactive"></app-inactive-users>
+</div>
+
+

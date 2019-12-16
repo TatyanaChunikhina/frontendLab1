@@ -1,9 +1,11 @@
 <H1>Добавить книгу</H1>
-<H3>Название: </H3><input #bookName >
-<H3>Автор: </H3><input #bookAutor >
-<H3>Год выпуска: </H3><input #bookYear >
+<fieldset [formGroup]="fG">
+<H3>Название: </H3><input  formControlName="nameControl" >
+<H3>Автор: </H3><input formControlName="authorControl">
+<H3>Год выпуска: </H3><input formControlName="yearControl" >
+</fieldset>
 <p>
-<button (click)="addBook(bookName.value,bookAutor.value,bookYear.value);
-bookName.value='';bookAutor.value='';bookYear.value='';">Добавить</button>
+<button (click)="addBook()">Добавить</button>
    
+   {{text}}
 </p>

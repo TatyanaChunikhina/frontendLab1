@@ -31,12 +31,19 @@ books: BookClass[]=[
   		return -1;
   }
 
-  public add(book){
-  	let index:number = this.getIndexById(book.id);
-    	console.log(index);
-  	if(index == -1) {this.books.push(book);return true;}
-  	else return false;
+  public add(name,author,year){
+    let id=this.books[this.books.length-1].id;
+    let index:number;
+    do{
+      id++;
+      index = this.getIndexById(id);
+    } while(index > -1);
+
+    let book=new BookClass(id,name,author,year);
+    console.log(id);
+  	this.books.push(book);
   }
+
   public delete(id){
 
   	let index:number = this.getIndexById(id);

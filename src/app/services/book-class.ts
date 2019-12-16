@@ -5,4 +5,5 @@ export class BookClass {
 	public author:string,
 	public year:string){
 	}
+
 }

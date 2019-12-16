@@ -1,0 +1,10 @@
+<H1>Добавить книгу</H1>
+<H3>Id: </H3><input #bookId >
+<H3>Название: </H3><input #bookName >
+<H3>Автор: </H3><input #bookAutor >
+<H3>Год выпуска: </H3><input #bookYear >
+<p>
+<button (click)="addBook(bookId.value,bookName.value,bookAutor.value,bookYear.value);
+bookId.value='';bookName.value='';bookAutor.value='';bookYear.value='';">Добавить</button>
+   
+</p>

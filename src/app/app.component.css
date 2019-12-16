@@ -1,37 +1,24 @@
-.r { /*для левой колонки*/
-            width: 20%;
-            float: right;
-            /*position: static;*/
-            border-bottom: 1px;
-            border-top: 1px;
-            text-align: center;
-            border-color: black;
-            padding-right: 30%;
-        }
-
-.l {
-            width: 20%;
-            border-bottom: 1px;
-            border-top: 1px;
-            float: left;
-            position: static;
-            text-align: center;
-            border-color: white;
-            padding-left: 30%;
-        }
-
-.c{
-            width: 100%;
-            border-bottom: 1px;
-            border-top: 1px;
-            float: left;
-            position: static;
-            text-align: center;
-            border-color: white;
+a{
+	border-radius: 15px;
+	text-decoration: none;
+	width: 100px;
+   	height: 50px;
+   	background-color: pink;
+	display: block;
+	text-align: center;
+	padding-top: 25px;
+	margin: 5px;
 }
-.green{
-    color: green;
-}
-.red{
-    color: red;
+
+a:active { 
+	color: green; 
+	}
+a:hover {
+    text-decoration: underline; 
+    color: white; 
+   } 
+
+.active{
+	background-color: red;
+	color: white;
 }

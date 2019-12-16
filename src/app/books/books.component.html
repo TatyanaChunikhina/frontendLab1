@@ -1,0 +1,18 @@
+ <H1>Список всех книг</H1>
+ <table>
+ 	<tr>
+ 		<th>id</th>
+ 		<th>Название</th>
+ 		<th>Автор</th>
+ 		<th>Год</th>
+ 		<th class='w'>Удалить</th>
+ 	</tr>
+ 	<tr *ngFor="let book of bookService.books">
+ 		<td ><a [routerLink]= "['/books', book.id]">{{book.id}}</a>
+ 	</td>
+ 		<td >{{book.name}}</td>
+ 		<td >{{book.author}}</td>
+ 		<td >{{book.year}}</td>
+ 		<td class='w'><button (click)="goToDelete(book.id)">Удалить </button></td>
+	</tr>
+</table>
